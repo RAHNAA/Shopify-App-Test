@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3000;
 
 // Middleware to parse JSON request bodies
-app.use(cors({ origin: "http://localhost:3001" }));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 const SHOPIFY_STORE = process.env.SHOPIFY_STORE;
